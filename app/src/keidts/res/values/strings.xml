@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- Keidts: same code base, its own identity. Installs ALONGSIDE
          the original AEE (com.apk.editor) because the application ID
          is different. -->
     <string name="app_name" translatable="false">Keidts</string>
     <string name="app_name_short" translatable="false">Keidts</string>
+    <string name="about_summary">Keidts, a fork of APK Explorer &amp; Editor (AEE), an open-source tool to explore the contents of an installed APK, is strictly made with an aim to inspect installed APK\'s.</string>
+    <string name="share_summary">Keidts %s can be obtained from GitHub: https://github.com/malwar77/keidts</string>
+    <string name="warning_message">Welcome to Keidts, a powerful tool to explore the contents of an installed APK!\n\nImportant\nKeidts is strictly made with good intentions. Please do not use this tool for any kind of illegal or inappropriate activities.</string>
 </resources>
