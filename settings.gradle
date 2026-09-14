@@ -23,4 +23,4 @@ dependencyResolutionManagement {
 }
 
 include(":app", ":navView")
-rootProject.name = "APK Editor"
+rootProject.name = "Keidts"

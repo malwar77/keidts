@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Keidts: same code base, its own identity. Installs ALONGSIDE
+         the original AEE (com.apk.editor) because the application ID
+         is different. -->
+    <string name="app_name" translatable="false">Keidts</string>
+    <string name="app_name_short" translatable="false">Keidts</string>
+</resources>

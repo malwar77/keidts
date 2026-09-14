@@ -1,3 +1,26 @@
+# Keidts
+
+Keidts is a fork of [APK Explorer & Editor (AEE)](https://github.com/apk-editor/APK-Explorer-Editor) v0.36 — an open-source tool to explore the contents of installed APKs on Android.
+
+## Builds
+
+Keidts ships **two release flavors from the same code**:
+
+| Flavor | Application ID | What it does |
+|---|---|---|
+| `keidts` | `com.keidts.editor` | Installs **alongside** the original AEE — both apps coexist on the same device |
+| `full` | `com.apk.editor` | **Drop-in replacement** — installs over the original AEE in place |
+
+The `play` flavor (`com.apk.explorer`) is inherited from upstream.
+
+Both flavors are produced by GitHub Actions on every push; grab the APKs from the workflow artifacts.
+
+## License
+
+This fork inherits **GPL-3.0** from AEE — see [LICENSE](LICENSE). The source must stay open. Upstream credits: [Credits.md](Credits.md).
+
+---
+
 # APK Explorer & Editor (AEE)
 
 ![AEE](app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true)

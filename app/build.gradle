@@ -51,6 +51,12 @@ android {
             applicationId "com.apk.editor"
             dimension "release"
         }
+        // Keidts: the alongside build. Own application ID, so it
+        // installs NEXT TO the original AEE without touching it.
+        keidts {
+            applicationId "com.keidts.editor"
+            dimension "release"
+        }
     }
     lint {
         abortOnError false
