@@ -25,6 +25,16 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        ciSigning {
+            // Populated only when CI decodes the keystore next to this file.
+            storeFile file('keidts-release.p12')
+            storePassword System.getenv('KEYSTORE_PASSWORD') ?: 'not-set'
+            keyAlias System.getenv('KEY_ALIAS') ?: 'not-set'
+            keyPassword System.getenv('KEY_PASSWORD') ?: 'not-set'
+        }
+    }
+
     buildTypes {
         debug {
             applicationIdSuffix '.debug'
@@ -34,6 +44,11 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // Sign only when the keystore file exists (CI builds);
+            // unsigned otherwise so local builds keep working.
+            if (file('keidts-release.p12').exists()) {
+                signingConfig signingConfigs.ciSigning
+            }
         }
     }
 

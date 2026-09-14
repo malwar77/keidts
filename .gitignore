@@ -13,3 +13,8 @@
 /captures
 .externalNativeBuild
 .cxx
+
+# signing material — never commit
+*.p12
+*.keystore
+signing-tmp/
